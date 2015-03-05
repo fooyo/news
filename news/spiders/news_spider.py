@@ -1,9 +1,26 @@
 import scrapy
 import requests
+import math
 
 from lxml import html
 from news.items import NewsItem
+from textblob import TextBlob as tb
 
+
+def tf(word, blob):
+    return blob.words.count(word) / len(blob.words)
+
+def n_containing(word, bloblist):
+    return sum(1 for blob in bloblist if word in blob)
+
+def idf(word, bloblist):
+    return math.log(len(bloblist) / (1 + n_containing(word, bloblist)))
+
+def tfidf(word, blob, bloblist):
+    return tf(word, blob) * idf(word, bloblist)
+
+blobList = []
+itemList = []
 class NewsSpider(scrapy.Spider):
     name = "news"
     allowed_domains = [
@@ -12,19 +29,10 @@ class NewsSpider(scrapy.Spider):
         "www.wsj.com"
     ]
     start_urls = [
-        "http://www.bloomberg.com/news/world",
-        "http://www.bloomberg.com/news/industries",
-        "http://www.bloomberg.com/news/science-energy",
-        "http://www.bloomberg.com/technology",
-        "http://www.bloomberg.com/news/design",
-        "http://www.bloomberg.com/news/culture",
-        "http://www.bloomberg.com/graphics",
-        "http://www.bloomberg.com/pursuits",
-        "http://www.bloombergview.com",
-        "http://www.bloomberg.com/politics",
-        "http://www.bloomberg.com/businessweek"
+        "http://www.bloomberg.com/news/world"
     ]
-
+    global blobList
+    global itemList
     def parse(self, response):
         if response.url.find("wsj") == -1:
             for sel in response.xpath('//ul/li[@class="type-article"]'):
@@ -58,6 +66,8 @@ class NewsSpider(scrapy.Spider):
                         else:
                             item['title'] = ""
                     item['source'] = "bloomberg"
+                    blobList.append(tb(item['body']))
+                    itemList.append(item)
                     yield item
             for sel in response.xpath('//h1/a'):
                 if sel.xpath('@href').extract():
@@ -90,6 +100,8 @@ class NewsSpider(scrapy.Spider):
                     item['img'] = parsed_body.xpath('//figure/img/@src')
                     item['cate'] = response.url.split("/")[-1]
                     item['source'] = "bloomberg"
+                    blobList.append(tb(item['body']))
+                    itemList.append(item)
                     yield item
         else:
             for sel in response.xpath('//ul/li'):
@@ -125,4 +137,6 @@ class NewsSpider(scrapy.Spider):
                         else:
                             item['cate'] = cate
                         item['source'] = "wsj"
+                        blobList.append(tb(item['body']))
+                        itemList.append(item)
                         yield item
