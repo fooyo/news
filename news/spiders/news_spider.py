@@ -4,23 +4,7 @@ import math
 
 from lxml import html
 from news.items import NewsItem
-from textblob import TextBlob as tb
 
-
-def tf(word, blob):
-    return blob.words.count(word) / len(blob.words)
-
-def n_containing(word, bloblist):
-    return sum(1 for blob in bloblist if word in blob)
-
-def idf(word, bloblist):
-    return math.log(len(bloblist) / (1 + n_containing(word, bloblist)))
-
-def tfidf(word, blob, bloblist):
-    return tf(word, blob) * idf(word, bloblist)
-
-blobList = []
-itemList = []
 class NewsSpider(scrapy.Spider):
     name = "news"
     allowed_domains = [
@@ -100,8 +84,6 @@ class NewsSpider(scrapy.Spider):
                     item['img'] = parsed_body.xpath('//figure/img/@src')
                     item['cate'] = response.url.split("/")[-1]
                     item['source'] = "bloomberg"
-                    blobList.append(tb(item['body']))
-                    itemList.append(item)
                     yield item
         else:
             for sel in response.xpath('//ul/li'):
@@ -137,6 +119,4 @@ class NewsSpider(scrapy.Spider):
                         else:
                             item['cate'] = cate
                         item['source'] = "wsj"
-                        blobList.append(tb(item['body']))
-                        itemList.append(item)
                         yield item
