@@ -25,14 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="news_spider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/spiders/news_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.9411764" vertical-offset="0" max-vertical-offset="1920">
-              <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+            <state vertical-scroll-proportion="-46.666668" vertical-offset="1725" max-vertical-offset="4500">
+              <caret line="199" column="71" selection-start-line="199" selection-start-column="71" selection-end-line="199" selection-end-column="71" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="76.05882" vertical-offset="22464" max-vertical-offset="23025">
+              <caret line="1239" column="180" selection-start-line="1239" selection-start-column="180" selection-end-line="1239" selection-end-column="180" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,8 +60,8 @@
       <file leaf-file-name="links.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/links.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.875" vertical-offset="10302" max-vertical-offset="10890">
-              <caret line="693" column="1" selection-start-line="693" selection-start-column="1" selection-end-line="693" selection-end-column="1" />
+            <state vertical-scroll-proportion="43.52941" vertical-offset="2940" max-vertical-offset="10890">
+              <caret line="48" column="333" selection-start-line="48" selection-start-column="329" selection-end-line="48" selection-end-column="333" />
               <folding />
             </state>
           </provider>
@@ -70,18 +80,8 @@
       <file leaf-file-name="bloomberg.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bloomberg.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5310">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.372549" vertical-offset="5048" max-vertical-offset="9180">
+              <caret line="348" column="4024" selection-start-line="348" selection-start-column="4018" selection-end-line="348" selection-end-column="4024" />
               <folding />
             </state>
           </provider>
@@ -97,20 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.34313726" vertical-offset="0" max-vertical-offset="612">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/__init__.py">
+      <file leaf-file-name="wsj.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsj.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5760">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -124,10 +124,11 @@
       <list>
         <option value="$PROJECT_DIR$/news/technology.json" />
         <option value="$PROJECT_DIR$/news/links.json" />
-        <option value="$PROJECT_DIR$/news/items.py" />
         <option value="$PROJECT_DIR$/links.json" />
+        <option value="$PROJECT_DIR$/news/items.py" />
         <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/news/spiders/news_spider.py" />
+        <option value="$PROJECT_DIR$/news.json" />
       </list>
     </option>
   </component>
@@ -698,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
@@ -730,37 +723,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wsj.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/links.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.875" vertical-offset="10302" max-vertical-offset="10890">
-          <caret line="693" column="1" selection-start-line="693" selection-start-column="1" selection-end-line="693" selection-end-column="1" />
+        <state vertical-scroll-proportion="43.52941" vertical-offset="2940" max-vertical-offset="10890">
+          <caret line="48" column="333" selection-start-line="48" selection-start-column="329" selection-end-line="48" selection-end-column="333" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="76.05882" vertical-offset="22464" max-vertical-offset="23025">
+          <caret line="1239" column="180" selection-start-line="1239" selection-start-column="180" selection-end-line="1239" selection-end-column="180" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bloomberg.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5310">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state vertical-scroll-proportion="-3.372549" vertical-offset="5048" max-vertical-offset="9180">
+          <caret line="348" column="4024" selection-start-line="348" selection-start-column="4018" selection-end-line="348" selection-end-column="4024" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/spiders/news_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.9411764" vertical-offset="0" max-vertical-offset="1920">
-          <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+        <state vertical-scroll-proportion="-46.666668" vertical-offset="1725" max-vertical-offset="4500">
+          <caret line="199" column="71" selection-start-line="199" selection-start-column="71" selection-end-line="199" selection-end-column="71" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34313726" vertical-offset="0" max-vertical-offset="612">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
